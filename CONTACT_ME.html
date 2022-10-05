@@ -13,7 +13,7 @@
     <!-- THE GENERAL STYLESHEET FOR THE UNIFORM ELEMENTS FOUND ON ALL PAGES -->
     <link href="STYLE.css" rel="stylesheet" type="text/css">
 
-    <!-- THE STYLESHEET FOR THE HOME PAGE -->
+    <!-- THE STYLESHEET FOR THE CONTACT ME PAGE -->
     <link href="STYLE_CONTACTME.css" rel="stylesheet" type="text/css">
 
     <!-- .js FILES -->
@@ -23,6 +23,8 @@
 
 <!-- NAVIGATION BAR -->
 <ul>
+    <!-- THE ACTIVE CLASS IS ASSIGNED TO 'Contact Me' -->
+    <!-- THE CONNECT THE BUTTONS TO THEIR RESPECTIVE .html FILES -->
     <li> <a link href="index.html"> Home </a> </li>
     <li> <a link href="ABOUT_ME.html"> About Me </a> </li>
     <li> <a link href="PROJECTS.html"> Projects </a> </li>
@@ -31,30 +33,42 @@
 
 <body>
     <div id="wrapper">
+        <!-- THE TITLE FOR THE PAGE -->
         <div id="banner">
             <h1>
                 Fill the form to contact me!
             </h1>
         </div>
 
+        <!-- THE FRAME FOR THE FORM. THE RESPONSES ARE SENT TO THE GIVEN EMAIL -->
         <form action="mailto: Leo.Fanseda@ontariotechu.net" ?subject="Signup" Form method enctype="text/plain"
             name="form">
+            
+            <!-- ASKING THE USER FOR THEIR NAME -->
             <p>
                 <label for="name"> Name </label>
                 <input name="name" type="text" placeholder="Enter your name" size="40" required>
             </p>
+            
+            <!-- ASKING THE USER FOR THEIR EMAIL -->
             <p>
                 <label for="email"> Email </label>
                 <input name="email" type="email" placeholder="Enter your email" size="40" required>
             </p>
+            
+            <!-- ASKING THE USER FOR THEIR PHONE NUMBER, BUT THIS OPTION IS OPTIONAL -->
             <p>
                 <label for="phone">Phone Number</label>
                 <input name="phone" type="tel" placeholder="Enter your phone number (optional)" size="40">
             </p>
+            
+            <!-- ASKING THE USER FOR ANY COMMMENTS OR FEEDBACK -->
             <p>
                 <label for="comments">Any comments or feedback? </label>
                 <textarea name="comments" cols="60" rows="6"></textarea>
             </p>
+            
+            <!-- ASKING THE USER TO SUBMIT THEIR FORM. ALSO OFFERS THE USER TO RESET THE FORM -->
             <p>
                 <input type="submit" value="Click here to submit the form" />
             </p>
@@ -63,6 +77,8 @@
             </p>
 
         </form>
+        
+        <!-- THE FOOTER -->
         <div class="footer">
             <p>
                 &copy 2022 by Leo Fanseda <br>
